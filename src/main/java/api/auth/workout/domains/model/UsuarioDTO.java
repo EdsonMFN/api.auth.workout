@@ -1,7 +1,7 @@
-package api.auth.workout.rest.dto;
+package api.auth.workout.domains.model;
 
 
-import api.auth.workout.entitys.acesso.UserRole;
+import api.auth.workout.enums.UserRole;
 import lombok.Builder;
 import lombok.Data;
 

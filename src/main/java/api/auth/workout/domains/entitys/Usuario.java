@@ -1,5 +1,6 @@
-package api.auth.workout.entitys.acesso;
+package api.auth.workout.domains.entitys;
 
+import api.auth.workout.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;

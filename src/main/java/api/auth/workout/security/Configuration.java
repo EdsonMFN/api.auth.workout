@@ -53,7 +53,7 @@ public class Configuration {
                         .requestMatchers(antMatcher("/personal/**")).hasRole("ADMIN")
 
                         .requestMatchers(antMatcher("/fichaDeTreino/**")).hasRole("PROFESSOR")
-                        .requestMatchers(HttpMethod.GET,"/fichaDeTreino").hasAnyRole("PROFESSOR","ALUNO")
+                        .requestMatchers(HttpMethod.GET,"/fichaDeTreino").hasAnyRole("PROFESSOR")
                         .requestMatchers(HttpMethod.GET,"/fichaDeTreino/aluno").hasAnyRole("PROFESSOR","ALUNO")
                         .anyRequest().authenticated())
                 .authenticationProvider(authenticationProvider())

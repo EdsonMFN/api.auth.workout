@@ -1,6 +1,6 @@
-package api.auth.workout.repositorys;
+package api.auth.workout.domains.repositorys;
 
-import api.auth.workout.entitys.acesso.Usuario;
+import api.auth.workout.domains.entitys.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

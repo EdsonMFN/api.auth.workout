@@ -1,4 +1,4 @@
-package api.auth.workout.entitys.acesso;
+package api.auth.workout.enums;
 
 public enum UserRole {
 

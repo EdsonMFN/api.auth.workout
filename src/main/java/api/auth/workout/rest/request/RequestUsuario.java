@@ -1,7 +1,7 @@
 package api.auth.workout.rest.request;
 
 
-import api.auth.workout.entitys.acesso.UserRole;
+import api.auth.workout.enums.UserRole;
 import lombok.Getter;
 import lombok.Setter;
 

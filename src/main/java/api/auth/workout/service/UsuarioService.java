@@ -1,9 +1,9 @@
 package api.auth.workout.service;
 
 
-import api.auth.workout.entitys.acesso.Usuario;
-import api.auth.workout.repositorys.RepositoryUsuario;
-import api.auth.workout.rest.dto.UsuarioDTO;
+import api.auth.workout.domains.entitys.Usuario;
+import api.auth.workout.domains.repositorys.RepositoryUsuario;
+import api.auth.workout.domains.model.UsuarioDTO;
 import api.auth.workout.rest.request.RequestUsuario;
 import api.auth.workout.rest.response.ResponseUsuario;
 import jakarta.servlet.http.HttpServletRequest;
@@ -11,12 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Service
 public class UsuarioService {

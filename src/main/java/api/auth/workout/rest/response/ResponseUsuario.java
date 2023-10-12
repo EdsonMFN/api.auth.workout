@@ -1,7 +1,7 @@
 package api.auth.workout.rest.response;
 
 
-import api.auth.workout.rest.dto.UsuarioDTO;
+import api.auth.workout.domains.model.UsuarioDTO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

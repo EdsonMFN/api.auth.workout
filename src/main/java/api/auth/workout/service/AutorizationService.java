@@ -1,10 +1,9 @@
 package api.auth.workout.service;
 
 
-import api.auth.workout.entitys.acesso.Usuario;
-import api.auth.workout.repositorys.RepositoryUsuario;
+import api.auth.workout.domains.entitys.Usuario;
+import api.auth.workout.domains.repositorys.RepositoryUsuario;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
