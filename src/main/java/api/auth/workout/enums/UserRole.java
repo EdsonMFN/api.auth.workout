@@ -5,5 +5,5 @@ public enum UserRole {
     GESTOR,
     ADMIN,
     PROFESSOR,
-    ALUNO;
+    ALUNO
 }

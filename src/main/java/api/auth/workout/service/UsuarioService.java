@@ -53,7 +53,7 @@ public class UsuarioService {
         UsuarioDTO usuarioDTO = null;
 
         if (requestToken != null){
-            var login = tokenService.validationToken(clearTorken(requestToken));
+            var login = tokenService.validationToken(clearToken(requestToken));
             Usuario usuario = repositoryUsuario.findByNomeUsuario(login);
 
             var autorization = new UsernamePasswordAuthenticationToken(usuario,null,usuario.getAuthorities());
@@ -62,13 +62,12 @@ public class UsuarioService {
         }
         return new ResponseUsuario(usuarioDTO);
     }
-    private String clearTorken(HttpServletRequest request){
+    private String clearToken(HttpServletRequest request){
 
         var autorizationHeader = request.getHeader("Authorization");
         if (autorizationHeader == null){
             return null;
         }
         return autorizationHeader.replace("Bearer ", "");
-
     }
 }

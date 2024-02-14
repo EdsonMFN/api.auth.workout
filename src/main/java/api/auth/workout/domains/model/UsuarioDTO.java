@@ -10,11 +10,8 @@ import lombok.Data;
 public class UsuarioDTO {
 
     private Long idUsuario;
-
     private String nomeUsuario;
-
     private String senha;
-
     private UserRole role;
 
 }
